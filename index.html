@@ -670,6 +670,172 @@
       </div>
     </article>
 
+    <!-- CASE 07 -->
+    <article class="case" id="case-ta">
+      <header class="case-head">
+        <div class="case-tag">07 · Lean Process Re-Architecture</div>
+        <h3 class="case-title">Rebuilding the talent acquisition flow for throughput.</h3>
+        <p class="case-sub">Zoho Desk / Zoho Recruit · hiring manager to onboarded hire · approvals, sourcing, interview, offer, onboarding</p>
+      </header>
+
+      <div class="case-grid">
+        <div class="case-block case-scale">
+          <h4>Shape of the problem</h4>
+          <ul>
+            <li><strong>High cycle time</strong> from role approval to hire</li>
+            <li><strong>Multiple redundant approval points</strong> spread across the flow</li>
+            <li><strong>Sourcing restarting unnecessarily</strong> after late-stage rejection</li>
+            <li><strong>Late-stage salary misalignment</strong> killing offers at the finish line</li>
+            <li><strong>Inconsistent candidate progression</strong> between roles and recruiters</li>
+            <li><strong>Poor visibility into pipeline health</strong> at any given moment</li>
+            <li><strong>Excessive operational handoffs</strong> between hiring manager, TA, finance, ops</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h4>Context</h4>
+          <p>
+            Hiring throughput was constrained by a fragmented, multi-step process with excessive
+            approval loops, inconsistent sequencing, and repeated rework cycles. As headcount
+            plans grew, the process was bending under load that the original design never
+            anticipated.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Problem</h4>
+          <p>
+            Every role started clean and ended messy. Candidates progressed before budget
+            certainty, sourcing channels weren't gated against approval, and the same conditional
+            loops fired repeatedly. The TA function looked busy but the cycle time told a
+            different story.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Diagnosis</h4>
+          <p>
+            The issue wasn't hiring capability, it was flow design. The process contained too many
+            conditional loops and late-stage decision points, so work was repeatedly invalidated
+            instead of progressing forward.
+          </p>
+          <p style="margin-top:10px">
+            <strong>The system optimised for control, not flow. As volume increased, that tradeoff
+            created latency, rework, and inconsistent outcomes.</strong> Every additional approval
+            point looked like risk reduction in isolation, and added up to a process that couldn't
+            scale.
+          </p>
+        </div>
+
+        <div class="case-block" style="grid-column: 1 / -1;">
+          <h4>Before / After</h4>
+          <div class="ba-grid">
+            <figure class="ba-fig">
+              <figcaption><span class="ba-label ba-before">Before</span> Multi-loop, late-stage approval</figcaption>
+              <a href="images/ta-before.png" target="_blank" rel="noopener">
+                <img src="images/ta-before.png" alt="Talent acquisition process diagram, before re-architecture, showing hiring manager creating requisition, manager sets salary, finance approval, sourcing, video interview, candidate select, office panel, document collection, office negotiation, reference check, contract, onboarding, hardware setup, 3 month performance review." loading="lazy" />
+              </a>
+            </figure>
+            <figure class="ba-fig">
+              <figcaption><span class="ba-label ba-after">After</span> Upstream gating, single forward path</figcaption>
+              <a href="images/ta-after.png" target="_blank" rel="noopener">
+                <img src="images/ta-after.png" alt="Talent acquisition process diagram, after re-architecture, showing approval gating moved upstream, sourcing channels structured, video then office interview, document collection, offer process, manager sets salary, offer negotiation, finance approval, reference and background check, contract, onboarding, hardware setup, 3 month performance review." loading="lazy" />
+              </a>
+            </figure>
+          </div>
+          <p class="ba-caption">
+            Click either diagram to open full size. The same boxes, sequenced for flow instead of control.
+          </p>
+        </div>
+
+        <div class="case-block" style="grid-column: 1 / -1;">
+          <h4>What I changed</h4>
+
+          <div class="change-row">
+            <div class="change-num">01</div>
+            <div class="change-body">
+              <h5>Moved salary and finance approval upstream</h5>
+              <p><strong>Before:</strong> candidates progressed before budget certainty, so offers blew up at negotiation.</p>
+              <p><strong>After:</strong> salary banded and finance approved before sourcing was greenlit.</p>
+              <p class="change-impact">Impact: reduced late-stage rejection, eliminated wasted candidate effort, increased offer acceptance confidence.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="change-num">02</div>
+            <div class="change-body">
+              <h5>Simplified sourcing pathways</h5>
+              <p><strong>Before:</strong> sourcing entry points were unclear and disconnected, hard to attribute or compare.</p>
+              <p><strong>After:</strong> structured channels (post role, headhunt, referrals) running from a single sourcing brief.</p>
+              <p class="change-impact">Impact: clearer funnel entry, better pipeline visibility, easier tracking of source performance per role and per recruiter.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="change-num">03</div>
+            <div class="change-body">
+              <h5>Introduced structured interview gating</h5>
+              <p><strong>Before:</strong> inconsistent progression between candidates, depending on who was driving.</p>
+              <p><strong>After:</strong> defined gates, 1-way video, panel interview, recruiter document collection, each with an explicit approval point.</p>
+              <p class="change-impact">Impact: reduced ambiguity, improved candidate filtering, clearer decision ownership at every stage.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="change-num">04</div>
+            <div class="change-body">
+              <h5>Reduced rework loops</h5>
+              <p><strong>Before:</strong> reject paths fed straight back into "restart sourcing", repeatedly.</p>
+              <p><strong>After:</strong> upstream filtering caught the rejections that didn't need to happen downstream; the remaining restart paths were deliberate, not default.</p>
+              <p class="change-impact">Impact: improved cycle efficiency, reduced wasted effort, improved throughput per recruiter.</p>
+            </div>
+          </div>
+
+          <div class="change-row">
+            <div class="change-num">05</div>
+            <div class="change-body">
+              <h5>Aligned onboarding and post-hire review</h5>
+              <p><strong>Before:</strong> hire and onboarding were a handoff cliff. Post-hire performance disappeared from the process.</p>
+              <p><strong>After:</strong> candidate onboarding, hardware and account setup, and a 3-month performance review tied back into the TA cycle as a closing approval, with explicit "TA role complete" or "restart sourcing" outcomes.</p>
+              <p class="change-impact">Impact: the process now learns from its own outputs instead of dropping them.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-block">
+          <h4>Operational thinking</h4>
+          <p>
+            Every step in a process is either moving the candidate forward or asking permission to
+            keep going. Most broken processes are dense with the second kind. I rebuild by asking
+            two questions: <em>which approvals can move upstream so they gate the work instead of
+            interrupting it?</em> and <em>which decision points are doing real filtering versus
+            performing control?</em> What's left is the flow.
+          </p>
+        </div>
+
+        <div class="case-block">
+          <h4>Outcome</h4>
+          <ul>
+            <li>Cycle time from requisition to hire materially reduced.</li>
+            <li>Late-stage offer collapse on salary all but disappeared.</li>
+            <li>Sourcing channel performance became visible per role and per recruiter.</li>
+            <li>Pipeline health at any week became answerable in one view, not three spreadsheets.</li>
+            <li>Onboarding and 3-month review fed back into the TA function as a closing signal, not an orphan step.</li>
+          </ul>
+        </div>
+
+        <div class="case-block case-reflection">
+          <h4>What I'd do differently</h4>
+          <p>
+            I'd version the SLAs against each gate from day one. The flow design held, but for the
+            first quarter we were debating "what counts as overdue" at each step. Bake those SLAs
+            into the redesign and you get the throughput conversation for free instead of paying
+            for it later.
+          </p>
+        </div>
+      </div>
+    </article>
+
   </div>
 </section>
 
