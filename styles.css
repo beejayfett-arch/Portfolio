@@ -333,6 +333,24 @@ section { padding: 90px 0; border-top: 1px solid var(--border); }
   font-size: 13px;
 }
 
+/* ---------- Artifact figure (single screenshot) ---------- */
+.artifact-fig {
+  margin: 10px 0 0;
+  background: #ffffff;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.artifact-fig a { display: block; line-height: 0; }
+.artifact-fig img { width: 100%; height: auto; display: block; }
+.artifact-fig figcaption {
+  background: var(--bg-card-2);
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--border);
+}
+
 /* ---------- Before / After diagrams ---------- */
 .ba-grid {
   display: grid;

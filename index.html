@@ -338,6 +338,25 @@
           </ul>
         </div>
 
+        <div class="case-block" style="grid-column: 1 / -1;">
+          <h4>Artifact, the dashboard in production</h4>
+          <figure class="artifact-fig">
+            <a href="images/aussie-referrals-dashboard.webp" target="_blank" rel="noopener">
+              <img src="images/aussie-referrals-dashboard.webp" alt="Salesforce dashboard showing referrals pipeline. Tiles: 7.6K referrals in pre-engagement, 630 referrals converted to engagements this quarter, 11K referrals all time, 6 percent converted referrals gauge. Charts: referrals by month bar chart scaling from 12 in December 2024 to around 1K in January 2026; referrals pre-engagement status donut showing New Lead, Attempting Contact, Contacted and In Progress, Nurture, Property Strategy Session, Customer Agreement Voice, Other; referrals converted to search date bar chart." loading="lazy" />
+            </a>
+            <figcaption>Salesforce executive dashboard, referrals layer. 11K referrals lifetime, 7.6K active in pre-engagement, 6% all-time conversion to engagement.</figcaption>
+          </figure>
+          <p style="margin-top:14px; color: var(--text-muted); font-size: 14.5px;">
+            What this dashboard demonstrates in one frame:
+          </p>
+          <ul style="margin-top:8px;">
+            <li><strong>The lifecycle decomposition from Case 01 in production.</strong> The pre-engagement status donut shows the actual operational stages (New Lead, Attempting Contact, Contacted and In Progress, Nurture, Property Strategy Session, Customer Agreement) rather than the broad "contacted / not contacted" view it replaced.</li>
+            <li><strong>Volume scale.</strong> Monthly referral intake scaled from ~12 in late 2024 to ~1K/month in 2026, the system was load-tested by growth, not just designed for it.</li>
+            <li><strong>Causal, owned, bounded.</strong> Every tile answers one question with one definition. % conversion is reported against a single lifecycle transition, not five interpretations of "converted".</li>
+            <li><strong>Leadership-grade roll-up.</strong> All-time, quarter, status mix, monthly trend, and conversion search date are visible on one screen, the operating cadence sits on this surface.</li>
+          </ul>
+        </div>
+
         <div class="case-block case-reflection">
           <h4>What I'd do differently</h4>
           <p>
